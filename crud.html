@@ -1,0 +1,292 @@
+<!-- <div>
+
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" ng-model="name" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="text" ng-model="phone" class="form-control" id="phone">
+                    </div>
+                    <input type="hidden" ng-model="buttonType" class="form-control" id="buttonType" value="add">
+                    <input type="hidden" ng-model="editId" class="form-control" id="editId" value="">
+                </form>
+
+
+                <div class="container">
+                    <button class="btn btn-primary btn-lg btn-block" ng-click="addCrud()">Add</button>
+                </div>
+                <div class="container">
+                    <button class="btn btn-primary btn-lg btn-block" ng-click="updateCrud()">Update</button>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <table class="table table-hover table-bordered">
+                    <thead>
+
+                        <tr>
+                            <th>Name</th>
+
+                            <th>Phone</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="crud in allList">
+                            <td>{{crud.name}}</td>
+                            <td>{{crud.phone}}</td>
+                            <td>
+                                <button class="btn btn-primary" ng-click="editCrud($index)">Edit</button>
+                                <button class="btn btn-primary" ng-click="deleteList(crud.Id)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- 2 nd form -->
+<!-- <div id="crudpage">
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h2>Form 2</h2>
+                <form action="" class="form-group">
+                    <div>
+                        <label for="">Name</label>
+                        <input type="text" ng-model="name" class="form-control" id="name">
+                    </div>
+                    <div>
+                        <label for="">phone</label>
+                        <input type="text" ng-model="phone" class="form-control" id="phone">
+                    </div>
+                    <div>
+                        <label><H5>GENDER</H5></label><br>
+                        <select ng-model="gender" id="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div><br><br>
+                    <div>
+                        <label>College</label><br>
+                        <label><input type="radio" ng-model="college" value="skp">S.K.P engineering College</label><br>
+                        <label><input type="radio" ng-model="college" value="Arunai">Arunai engineering College</label><br>
+                    </div><br><br>
+                     <div>
+                        <label><H3>DEPARTMENT</H3></label><br>
+                        <input type="checkbox" ng-checked="department" value="cse" id="cse">CSE<br>
+                        <input type="checkbox" ng-checked="department" value="ece" id="ece">ECE<br>
+                        <input type="checkbox" ng-checked="department" value="eee" id="eee">EEE<br>
+                        <input type="checkbox" ng-model="department">Select All Department<br>
+                    </div>
+ <label>DEPARTMENT</label>
+<div ng-repeat="dept in department">
+    <input type="checkbox" ng-checked="dept.status" ng-click="checkDept($index)"> {{dept.dept}}<br>
+</div> -->
+<!-- <input type="file" ng-model="image" id="imageupload"> -->
+<!-- <div>
+                        <label ng-repeat="(dept,enabled) in department">
+                            <input type="checkbox" ng-model="department[dept]" />{{dept}} 
+                        </label>
+                        <p>Departmnet: {{department}}</p>
+                    </div> -->
+<!-- </form><br><br>
+<div ng-show="addButton">
+    <button class="btn btn-primary btn-lg btn-block" ng-click="addDetailss()">Add Details</button>
+</div>
+<div ng-show="updateButton" class="container">
+    <button class="btn btn-primary btn-lg btn-block" ng-click="updateDetails()">UpDate Details</button>
+</div>
+
+</div> -->
+<!--<div class="col-md-6">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Name</th>
+                <th>Phone No</th>
+                <th>Gender</th>
+                <th>College</th>
+                <th>Department</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody ng-if="allLists.length > 0">
+
+            <tr ng-repeat="list in allLists">
+                <td>{{$index + 1}}</td>
+                <td>{{list.name}}</td>
+                <td>{{list.phone}}</td>
+                <td>{{list.gender}}</td>
+                <td>{{list.college}}</td>
+                <td>{{list.department}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" ng-click="editDetails($index)">Edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="deleteDetails(list.Id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot ng-if="allLists.length == 0">
+            <tr>
+                <td colspan="7">
+                    No Records Found
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</div>
+</div>
+</div> -->
+<!-- <input type="button" value="Show Angular" ng-click="ShowHide()" />
+                <div ng-show="!IsVisible">
+                    <input type="text">
+                </div>  -->
+
+<!-- <div>
+    <button class="btn btn-primary" ng-click="studentList()">Show List</button>
+    <h1 ng-show="view" ng-repeat="show in nameList">{{show.city}}</h1>
+    <select>
+        <option value="">Select Values</option>
+        <option ng-repeat="show in nameList" value="{{show.name}}">{{show.city}}</option>
+    </select>
+</div>
+
+<div>
+    <button class="btn btn-primary" ng-click="show()">Show</button>
+    <input type="text" ng-show="view">
+</div> -->
+
+<!-- <input type="checkbox" id="dept"> -->
+
+<!-- <div>
+    <input type="text" ng-model="name" placeholder="Enter your Name">
+    <h1>{{message | uppercase}}</h1>
+</div>
+<div>
+    <button class="btn btn-primary" ng-click="showName()">View</button>
+    <h1 ng-show="view">{{myName}}</h1>
+</div> -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Add New Customer
+  </button><br>
+
+
+<div class="col-md-12">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Name</th>
+                <th>Phone No</th>
+                <th>Gender</th>
+                <th>College</th>
+                <th>Department</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody ng-if="allLists.length > 0">
+
+            <tr ng-repeat="list in allLists">
+                <td>{{$index + 1}}</td>
+                <td>{{list.name}}</td>
+                <td>{{list.phone}}</td>
+                <td>{{list.gender}}</td>
+                <td>{{list.college}}</td>
+                <td>{{list.department}}</td>
+                <td>
+                    <div></div>
+                    <button type="button" class="btn btn-primary" ng-click="editDetails($index)">Edit</button>
+
+
+</div>
+<button type="button" class="btn btn-danger" ng-click="deleteDetails(list.Id)">Delete</button>
+</td>
+</tr>
+</tbody>
+
+<tfoot ng-if="allLists.length == 0">
+    <tr>
+        <td colspan="7">
+            No Records Found
+        </td>
+    </tr>
+</tfoot>
+</table>
+</div>
+
+
+
+
+<!-- Modal  -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLongTitle">
+                    Please fill all the details
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="" class="form-group">
+                    <div>
+                        <label for=""><h4>Name</h4></label>
+                        <input type="text" ng-model="name" class="form-control" id="name">
+                    </div>
+                    <div>
+                        <label for=""><h4>Phone</h4></label>
+                        <input type="text" ng-model="phone" class="form-control" id="phone">
+                    </div>
+                    <div>
+                        <label><H4>GENDER</H4></label><br>
+                        <select ng-model="gender" id="gender">
+                                                    <option value="">Select Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                    </div><br><br>
+                    <div>
+                        <label><h4>College</h4></label><br>
+                        <label><input type="radio" ng-model="college" value="skp">S.K.P engineering College</label><br>
+                        <label><input type="radio" ng-model="college" value="Arunai">Arunai engineering College</label><br>
+                    </div><br><br>
+                    <label><h4>DEPARTMENT</h4></label>
+                    <div ng-repeat="dept in department">
+                        <input type="checkbox" ng-checked="dept.status" ng-click="checkDept($index)"> {{dept.dept}}<br>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <div ng-show="addButton">
+                    <button class="btn btn-primary" ng-click="addDetailss()">Add Details</button>
+                </div>
+                <div ng-show="updateButton" class="container">
+                    <button class="btn btn-primary" ng-click="updateDetails()">UpDate Details</button>
+                </div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
